@@ -2,29 +2,9 @@
 
 ## Algorithme de Filtrage Collaboratif basé sur la Théorie des Graphes
 
-**Module :** Structures de Données Avancées et Théorie des Graphes
 
-**Encadré par :** Pr. Ouafae Baida
 
-**Institution :** Faculté des Sciences et Techniques de Tanger (FSTT)
-
-**Date :** Janvier 2026
-
----
-
-### 1. ÉQUIPE DE RÉALISATION
-
-Ce projet est le fruit du travail collaboratif de :
-
-* **Manal Rhoni Aref**
-* **Souhaila Benaouate**
-* **Meryem El Khoumri**
-* **Moad Afylal**
-* **Sofyane Fritit**
-
----
-
-### 2. PRÉSENTATION DU PROJET
+### 1. PRÉSENTATION DU PROJET
 
 Inspiré des systèmes de pointe utilisés par les leaders du e-commerce (tels qu'Amazon), ce moteur de recommandation analyse le comportement d'achat pour suggérer des produits hautement pertinents.
 
@@ -35,7 +15,7 @@ Le système repose sur deux piliers scientifiques :
 
 ---
 
-### 3. ARCHITECTURE TECHNIQUE
+### 2. ARCHITECTURE TECHNIQUE
 
 Le code adopte une structure modulaire, favorisant la scalabilité et la maintenance :
 
@@ -48,14 +28,14 @@ Le code adopte une structure modulaire, favorisant la scalabilité et la mainten
 
 ---
 
-### 4. CONFIGURATION ET PRÉREQUIS
+### 3. CONFIGURATION ET PRÉREQUIS
 
 * **Langage :** Python 3.8+
 * **Dépendances :** Aucune bibliothèque tierce n'est requise. Le projet exploite exclusivement la bibliothèque standard Python (`sys`, `webbrowser`, `urllib`), garantissant une portabilité totale.
 
 ---
 
-### 5. GUIDE D'UTILISATION
+### 4. GUIDE D'UTILISATION
 
 Suivez ces étapes pour tester les fonctionnalités du moteur :
 
@@ -73,7 +53,7 @@ Suivez ces étapes pour tester les fonctionnalités du moteur :
 
 ---
 
-### 6. MÉTHODOLOGIE D'IMPLÉMENTATION
+### 5. MÉTHODOLOGIE D'IMPLÉMENTATION
 
 * **Modélisation :** Graphe biparti non-orienté où chaque arête symbolise une transaction.
 * **Optimisation :** Utilisation intensive des dictionnaires Python pour des recherches de nœuds en complexité constante .

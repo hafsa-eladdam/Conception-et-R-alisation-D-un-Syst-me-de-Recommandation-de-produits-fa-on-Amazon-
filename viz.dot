@@ -1,0 +1,75 @@
+graph GrapheBiparti {
+  // Configuration du fond
+  bgcolor="#1e293b";
+  rankdir=LR;
+  pad=0.5;
+
+  // Style global des nœuds (Texte en blanc)
+  node [fontname="Arial", fontcolor="white", penwidth=1.5];
+  
+  // Style global des liens (Gris clair pour la lisibilité)
+  edge [color="#94a3b8", penwidth=1.2];
+
+  // Nœuds Utilisateurs (Bleu plus doux pour le fond sombre)
+  "U1" [label="Moad", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U2" [label="Ahmed", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U3" [label="Sara", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U4" [label="Yassine", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U5" [label="Hajar", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U6" [label="Bilal", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U7" [label="Oussama", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U8" [label="Karim", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U9" [label="Lina", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U10" [label="Salma", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U11" [label="Rachid", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U12" [label="Nada", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U13" [label="Ayoub", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U14" [label="Kenza", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U15" [label="Mehdi", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U16" [label="Sofyane", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U17" [label="Souhaila", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U18" [label="Manal", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U19" [label="Meryem", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+  "U20" [label="Ouafae", shape=ellipse, style=filled, fillcolor="#334155", color="#60a5fa"];
+
+  // Nœuds Produits (Vert émeraude pour trancher avec le bleu)
+  "P101" [label="PC_Gamer_Ultra", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P102" [label="Souris_RGB_Pro", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P105" [label="Casque_Surround_7.1", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P110" [label="Chaise_Gaming", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P201" [label="MacBook_Pro_M2", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P202" [label="Clavier_Mecanique_Silent", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P203" [label="Ecran_4K_27_Pouces", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P204" [label="Hub_USB_C", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P106" [label="Tapis_Souris_XXL", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P103" [label="Clavier_Mecanique_RGB", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P205" [label="Webcam_HD_Pro", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P301" [label="PC_Portable_Etudiant", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P302" [label="Souris_Sans_Fil_Basique", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P303" [label="Disque_Dur_1To", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P304" [label="Sac_a_dos_Laptop", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P305" [label="Ecouteurs_Bluetooth", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+  "P206" [label="Support_Laptop_Alu", shape=box, style=filled, fillcolor="#064e3b", color="#34d399"];
+
+  // Liens
+  "U1" -- "P101"; "U1" -- "P102"; "U1" -- "P110"; "U1" -- "P105";
+  "U2" -- "P201"; "U2" -- "P204"; "U2" -- "P203"; "U2" -- "P202";
+  "U3" -- "P102"; "U3" -- "P106"; "U3" -- "P103";
+  "U4" -- "P101"; "U4" -- "P106"; "U4" -- "P105";
+  "U5" -- "P205"; "U5" -- "P203"; "U5" -- "P202";
+  "U6" -- "P301"; "U6" -- "P303"; "U6" -- "P302";
+  "U7" -- "P101"; "U7" -- "P110"; "U7" -- "P103";
+  "U8" -- "P205"; "U8" -- "P201"; "U8" -- "P204";
+  "U9" -- "P304"; "U9" -- "P301"; "U9" -- "P303";
+  "U10" -- "P301"; "U10" -- "P305"; "U10" -- "P302";
+  "U11" -- "P101"; "U11" -- "P103"; "U11" -- "P105";
+  "U12" -- "P206"; "U12" -- "P201"; "U12" -- "P203";
+  "U13" -- "P102"; "U13" -- "P106"; "U13" -- "P105";
+  "U14" -- "P301"; "U14" -- "P305"; "U14" -- "P304";
+  "U15" -- "P206"; "U15" -- "P204"; "U15" -- "P202";
+  "U16" -- "P101"; "U16" -- "P205"; "U16" -- "P105";
+  "U17" -- "P301"; "U17" -- "P304"; "U17" -- "P302";
+  "U18" -- "P201"; "U18" -- "P204"; "U18" -- "P203";
+  "U19" -- "P102"; "U19" -- "P106"; "U19" -- "P103";
+  "U20" -- "P206"; "U20" -- "P201"; "U20" -- "P305";
+}
